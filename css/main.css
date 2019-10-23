@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Anton', sans-serif;
+  font-family: 'NotoSans', sans-serif;
 }
 
 /*
@@ -97,6 +99,87 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*Begin Hero Styles*/
+
+.Hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('../img/billy_joel_hero.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: none;
+}
+
+.NavBar{
+  position: absolute; right: 30px; top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.NavBar a{
+  color: #ffffff;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.BillyJoel{
+  color: #3D3935;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  position: absolute; left: 30px; top: 1px;
+  text-decoration: none;
+}
+
+/*End Hero Section*/
+
+/*Begin About Section*/
+
+.About{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #030304;
+}
+
+.BillyJoelAbout{
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  position: absolute; left: 0px;
+}
+
+.sectionbox_about{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+  position: absolute; right: 30px;
+}
+
+#about_section{
+  color: #fff;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -263,4 +346,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
