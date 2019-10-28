@@ -101,7 +101,6 @@ textarea {
    ========================================================================== */
 
 /*Begin Hero Styles*/
-
 .Hero{
   height: 100vh;
   display: flex;
@@ -112,7 +111,8 @@ textarea {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: none;
+  background-attachment: fixed;
+  background-color: #3D3935;
 }
 
 .NavBar{
@@ -141,28 +141,30 @@ textarea {
 /*End Hero Section*/
 
 /*Begin About Section*/
-
 .About{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-image: url('../img/billy_joel_about.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-attachment: fixed;
   background-color: #030304;
 }
 
-.BillyJoelAbout{
-  width: 66%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  position: absolute; left: 0px;
+.about_section_title{
+  color: #fff;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 20px;
+  position: absolute; left: 30px; top: 950px;
+  text-decoration: none;
 }
 
 .sectionbox_about{
-  width: 33%;
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +180,78 @@ textarea {
   font-size: 15px;
   text-decoration: none;
 }
+/*End About Section*/
 
+/*Begin Tour Section*/
+.Tour{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('../img/billy_joel_tour.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tour_section_title{
+  color: #fff;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 20px;
+  position: absolute; left: 30px; top: 1850px;
+  text-decoration: none;
+}
+/*End Tour Section*/
+
+/*Begin Testimonial Section*/
+.Testimonials{
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #3D3935;
+}
+
+.testimonial_section_title{
+  color: #fff;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 20px;
+  position: absolute; top: 2750px;
+  text-decoration: none;
+}
+
+.testimonial_1{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute; right: 200px; top: 2900px;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 15px;
+}
+
+.testmionial_1_image a{
+  background-image: url('../img/Cassandra.jpg');
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute; left: 200px; top: 2900px;
+}
+/*End Testimonial Section*/
 
 
 /* ==========================================================================
