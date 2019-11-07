@@ -219,6 +219,13 @@
     position: absolute;
     left: 45px;
   }
+
+/*
+  .showTour{
+    background-color: rgba(255,255,255,.0)
+    border: none;
+  }
+  */
   /*End Tour Section*/
 
   /*Begin Testimonial Section*/
@@ -276,9 +283,9 @@
 
   /*Begin Footer Section*/
   .footer{
-    height: 5vh;
+    height: 7vh;
     display: flex;
-    background-color: #3D3935;
+    background-color: #030304;
   }
 
   .footer_nav{
@@ -388,6 +395,93 @@
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
+
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1286px) {
+  .Testimonials{
+    height: 410vh;
+  }
+
+  .testmionial_1_image img{
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .testimonial_box{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .Testimonials{
+    height: 310vh;
+  }
+
+  .testimonial_section_title{
+    color: #000;
+    position: absolute;
+    right: 105px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38.61%;
+    background-color: #fff;
+  }
+
+  .testimonial_box{
+    width: 80%;
+    background-color: #3D3935;
+  }
+
+  .testimonial_1{
+    background-color: #fff;
+    width: 40%;
+    padding: 45px;
+    font-size: 14px;
+  }
+
+  .testmionial_1_image{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1012px) {
+  .Testimonials{
+    height: 325vh;
+  }
+}
+
+/* On screens that are 900px wide or less */
+@media screen and (max-width: 979px) {
+  .Testimonials{
+    height: 340vh;
+  }
+}
+
+/* On screens that are 768px wide or less */
+@media screen and (max-width: 768px) {
+
+}
+
+/* On screens that are 550px wide or less */
+@media screen and (max-width: 550px) {
+
+}
+
+/* On screens that are 450px wide or less */
+@media screen and (max-width: 450px) {
+
+}
+
+/* On screens that are 300px wide or less */
+@media screen and (max-width: 300px) {
+
+}
 
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
