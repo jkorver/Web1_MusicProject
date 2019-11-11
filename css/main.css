@@ -18,8 +18,9 @@
     line-height: 1.4;
     font-family: 'Anton', sans-serif;
     font-family: 'NotoSans', sans-serif;
+    overflow-x: hidden;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -29,21 +30,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -52,13 +53,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -67,43 +68,42 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */
-  
+
   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
   }
-  
+
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+
   /*Begin Hero Styles*/
-  
-  .Hero {
+  .Hero{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -115,9 +115,11 @@
     background-size: cover;
     background-attachment: fixed;
     background-color: #3D3935;
+    background-blend-mode: lighten;
+    position: relative;
   }
-  
-  .NavBar {
+
+  .NavBar{
     position: absolute;
     right: 30px;
     top: 50px;
@@ -125,29 +127,32 @@
     align-items: center;
     display: flex;
   }
-  
-  .NavBar a {
+
+  .NavBar a{
     color: #ffffff;
     font-family: 'NotoSans', sans-serif;
     font-size: 20px;
     margin: 10px;
     text-decoration: none;
   }
-  
-  .BillyJoel {
-    color: #3D3935;
+
+/* Enlarged the text a bit and transformed it to uppercase with white lettering. it's easier to read and definitely stands out for brand presence. */
+  .BillyJoel{
+    color: #fff;
     font-family: 'Anton', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     position: absolute;
     left: 30px;
     top: 1px;
-    text-decoration: none;
+    text-transform: uppercase;
   }
-  
+
+
   /*End Hero Section*/
-  
+
   /*Begin About Section*/
-  
+
+
   .About {
     height: 100vh;
     display: flex;
@@ -160,19 +165,28 @@
     background-size: 80% auto;
     background-attachment: fixed;
     background-color: #030304;
+    position: relative;
   }
-  
-  .about_section_title {
+
+/* fixed positioning: made .About position relative so you can push this class down 10px and left 30px. Much easier to maintain for mobile. */
+  .about_section_title{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
     position: absolute;
     left: 30px;
-    top: 950px;
+    top: 10px;
     text-decoration: none;
   }
-  
-  .sectionbox_about {
+
+/* kept styles going the whole way through all of the headers on the page. */
+  .about_section_title h1{
+    color: #fff;
+    font-family: 'NotoSans', sans-serif;
+    font-size: 50px;
+    margin: 2%;
+  }
+
+  .sectionbox_about{
     width: 33.3%;
     display: flex;
     flex-direction: column;
@@ -183,19 +197,17 @@
     position: absolute;
     right: 30px;
   }
-  
-  #about_section {
+
+  #about_section{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
     font-size: 15px;
     text-decoration: none;
   }
-  
   /*End About Section*/
-  
+
   /*Begin Tour Section*/
-  
-  .Tour {
+  .Tour{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -206,42 +218,85 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
   }
-  
-  .tour_section_title {
+
+  .tour_section_title{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
     position: absolute;
     left: 30px;
-    top: 1850px;
+    top: 10px;
     text-decoration: none;
   }
-  
+
+/* Reworked for consistency with other headers */
+  .tour_section_title h1{
+    color: #fff;
+    font-family: 'NotoSans', sans-serif;
+    font-size: 50px;
+    margin: 2%;
+  }
+
+/* Added basic styles to a button element to get rid of the background color */
+  button{
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden;
+   outline:none;
+  }
+
+  .chevron{
+    display: flex;
+    position: absolute;
+    left: 45px;
+  }
+
+  .chevron:hover{
+    opacity: .5;
+  }
+
+/*
+  .showTour{
+    background-color: rgba(255,255,255,.0)
+    border: none;
+  }
+  */
   /*End Tour Section*/
-  
+
   /*Begin Testimonial Section*/
-  
-  .Testimonials {
-    height: 300vh;
+
+  /* Reworked Testimonial layout to be easier to maintain on mobile. */
+
+  .Testimonials{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    padding: 2%;
     background-color: #3D3935;
+    position: relative;
   }
-  
-  .testimonial_section_title {
+
+  .testimonial_layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+/* restyled the header to be a header */
+  .testimonial_layout h1{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 2750px;
-    text-decoration: none;
+    font-size: 50px;
+    margin: 2%;
   }
-  
-  .testimonial_box {
-    width: 70%;
+
+  .testimonial_box{
+    width: 68%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,44 +304,72 @@
     flex-direction: row;
     background-color: #fff;
   }
-  
-  .testimonial_1 {
+
+/* add some line-height and increased the font size to 16px to help it take up a bit more space. */
+  .testimonial_1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 20px;
+    padding: 30px;
     font-family: 'NotoSans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.7rem;
   }
-  
-  .testmionial_1_image {
+
+  .testmionial_1_image{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  
-  .testmionial_1_image img {
-    width: 443px;
+
+/* Made the width more equal. This shrunk the size of the testimonial_box but it looks better now. */
+  .testmionial_1_image img{
+    width: 400px;
     height: auto;
   }
-  
   /*End Testimonial Section*/
-  
+
+  /*Begin Footer Section*/
+  .footer{
+    height: 7vh;
+    display: flex;
+    background-color: #030304;
+  }
+
+  .footer_nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .footer_nav a{
+    color: #ffffff;
+    align-items: center;
+    padding: 20px;
+    font-family: 'NotoSans', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  /*End Footer Section*/
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -295,7 +378,7 @@
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -308,13 +391,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -325,15 +408,15 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
   * Hide visually and from screen readers, but maintain layout
   */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
+
   /*
   * Clearfix: contain floats
   *
@@ -345,7 +428,7 @@
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
-  
+
   .clearfix:before,
   .clearfix:after {
     content: " ";
@@ -353,34 +436,113 @@
     display: table;
     /* 2 */
   }
-  
+
   .clearfix:after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1286px) {
+
+  .testmionial_1_image img{
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .testimonial_box{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+
+  .testimonial_section_title{
+    color: #000;
+    position: absolute;
+    right: 105px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38.61%;
+    background-color: #fff;
+  }
+
+  .testimonial_box{
+    width: 80%;
+    background-color: #3D3935;
+  }
+
+  .testimonial_1{
+    background-color: #fff;
+    width: 40%;
+    padding: 45px;
+    font-size: 14px;
+  }
+
+  .testmionial_1_image{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1012px) {
+
+}
+
+/* On screens that are 900px wide or less */
+@media screen and (max-width: 979px) {
+  .Testimonials{
+    height: 340vh;
+  }
+}
+
+/* On screens that are 768px wide or less */
+@media screen and (max-width: 768px) {
+
+}
+
+/* On screens that are 550px wide or less */
+@media screen and (max-width: 550px) {
+
+}
+
+/* On screens that are 450px wide or less */
+@media screen and (max-width: 450px) {
+
+}
+
+/* On screens that are 300px wide or less */
+@media screen and (max-width: 300px) {
+
+}
+
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  
+
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *:before,
