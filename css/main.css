@@ -18,6 +18,7 @@
     line-height: 1.4;
     font-family: 'Anton', sans-serif;
     font-family: 'NotoSans', sans-serif;
+    overflow-x: hidden;
   }
 
   /*
@@ -115,6 +116,7 @@
     background-attachment: fixed;
     background-color: #3D3935;
     background-blend-mode: lighten;
+    position: relative;
   }
 
   .NavBar{
@@ -134,18 +136,24 @@
     text-decoration: none;
   }
 
+/* Enlarged the text a bit and transformed it to uppercase with white lettering. it's easier to read and definitely stands out for brand presence. */
   .BillyJoel{
-    color: #3D3935;
+    color: #fff;
     font-family: 'Anton', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     position: absolute;
     left: 30px;
     top: 1px;
-    text-decoration: none;
+    text-transform: uppercase;
   }
+
+
   /*End Hero Section*/
 
   /*Begin About Section*/
+
+
+
   .About {
     height: 100vh;
     display: flex;
@@ -158,16 +166,26 @@
     background-size: 80% auto;
     background-attachment: fixed;
     background-color: #030304;
+    position: relative;
   }
+
+/* fixed positioning: made .About position relative so you can push this class down 10px and left 30px. Much easier to maintain for mobile. */
 
   .about_section_title{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
     position: absolute;
     left: 30px;
-    top: 950px;
+    top: 10px;
     text-decoration: none;
+  }
+
+/* kept styles going the whole way through all of the headers on the page. */
+  .about_section_title h1{
+    color: #fff;
+    font-family: 'NotoSans', sans-serif;
+    font-size: 50px;
+    margin: 2%;
   }
 
   .sectionbox_about{
@@ -202,23 +220,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
   }
 
   .tour_section_title{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
     position: absolute;
     left: 30px;
-    top: 1850px;
+    top: 10px;
     text-decoration: none;
   }
+
+
+/* Reworked for consistency with other headers */
+  .tour_section_title h1{
+    color: #fff;
+    font-family: 'NotoSans', sans-serif;
+    font-size: 50px;
+    margin: 2%;
+  }
+
+/* Added basic styles to a button element to get rid of the background color */
+  button{
+   background-color: Transparent;
+   background-repeat:no-repeat;
+   border: none;
+   cursor:pointer;
+   overflow: hidden;
+   outline:none;
+  }
+
 
   .chevron{
     display: flex;
     position: absolute;
     left: 45px;
   }
+
+
+  .chevron:hover{
+    opacity: .5;
+  }
+
 
 /*
   .showTour{
@@ -229,22 +273,34 @@
   /*End Tour Section*/
 
   /*Begin Testimonial Section*/
+
+
+  /* Reworked Testimonial layout to be easier to maintain on mobile. */
+
   .Testimonials{
-    height: 450vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    padding: 2%;
     background-color: #3D3935;
+    position: relative;
   }
 
-  .testimonial_section_title{
+
+  .testimonial_layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+/* restyled the header to be a header */
+  .testimonial_layout h1{
     color: #fff;
     font-family: 'NotoSans', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 2750px;
-    text-decoration: none;
+    font-size: 50px;
+    margin: 2%;
   }
 
   .testimonial_box{
@@ -257,15 +313,19 @@
     background-color: #fff;
   }
 
+
+/* add some line-height and increased the font size to 16px to help it take up a bit more space. */
+
   .testimonial_1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 60px;
+    padding: 30px;
     font-family: 'NotoSans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.7rem;
   }
 
   .testmionial_1_image{
@@ -275,8 +335,11 @@
     flex-direction: column;
   }
 
+
+/* Made the width more equal. This shrunk the size of the testimonial_box but it looks better now. */
   .testmionial_1_image img{
-    width: 443px;
+    width: 400px;
+
     height: auto;
   }
   /*End Testimonial Section*/
@@ -398,12 +461,11 @@
 
 /* On screens that are 1000px wide or less */
 @media screen and (max-width: 1286px) {
-  .Testimonials{
-    height: 410vh;
-  }
+
 
   .testmionial_1_image img{
-    width: 400px;
+    width: 380px;
+
     height: auto;
   }
 }
@@ -415,9 +477,8 @@
 }
 
 @media screen and (max-width: 1082px) {
-  .Testimonials{
-    height: 310vh;
-  }
+
+
 
   .testimonial_section_title{
     color: #000;
@@ -451,9 +512,8 @@
 
 /* On screens that are 1000px wide or less */
 @media screen and (max-width: 1012px) {
-  .Testimonials{
-    height: 325vh;
-  }
+
+
 }
 
 /* On screens that are 900px wide or less */
