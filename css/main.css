@@ -146,14 +146,9 @@
     top: 1px;
     text-transform: uppercase;
   }
-
-
   /*End Hero Section*/
 
   /*Begin About Section*/
-
-
-
   .About {
     height: 100vh;
     display: flex;
@@ -232,7 +227,6 @@
     text-decoration: none;
   }
 
-
 /* Reworked for consistency with other headers */
   .tour_section_title h1{
     color: #fff;
@@ -251,18 +245,15 @@
    outline:none;
   }
 
-
   .chevron{
     display: flex;
     position: absolute;
     left: 45px;
   }
 
-
   .chevron:hover{
     opacity: .5;
   }
-
 
 /*
   .showTour{
@@ -285,7 +276,6 @@
     background-color: #3D3935;
     position: relative;
   }
-
 
   .testimonial_layout{
     display: flex;
@@ -460,12 +450,15 @@
      ========================================================================== */
 
 /* On screens that are 1000px wide or less */
+@media screen and (max-width: 1298px) {
+  .testimonial_box{
+    width: 72%;
+  }
+}
+
 @media screen and (max-width: 1286px) {
-
-
   .testmionial_1_image img{
     width: 380px;
-
     height: auto;
   }
 }
@@ -476,61 +469,204 @@
   }
 }
 
-@media screen and (max-width: 1082px) {
-
-
-
-  .testimonial_section_title{
-    color: #000;
-    position: absolute;
-    right: 105px;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 38.61%;
-    background-color: #fff;
-  }
-
+@media screen and (max-width: 1119px) {
   .testimonial_box{
-    width: 80%;
-    background-color: #3D3935;
+    width: 81%;
   }
+}
 
-  .testimonial_1{
-    background-color: #fff;
-    width: 40%;
-    padding: 45px;
-    font-size: 14px;
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1106px) {
+  .testimonial_box{
+    width: 84%;
   }
+}
 
-  .testmionial_1_image{
+@media screen and (max-width: 1084px) {
+  .testimonial_section_title{
+  color: #000;
+  position: absolute;
+  right: 105px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38.61%;
+  background-color: #fff;
+}
+
+.testimonial_box{
+  width: 82%;
+  background-color: #3D3935;
+}
+
+.testimonial_1{
+  background-color: #fff;
+  width: 40%;
+  padding: 45px;
+  font-size: 14px;
+}
+
+.testmionial_1_image{
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
-  }
+}
 
 /* On screens that are 1000px wide or less */
-@media screen and (max-width: 1012px) {
+@media screen and (max-width: 1050px) {
+  .testimonial_box{
+    width: 83%;
+  }
+}
 
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 1024px) {
+  .Hero{
+    height: 50vh;
+  }
 
+  .NavBar{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+
+  .NavBar a{
+    font-size: 25px;
+  }
+
+  .BillyJoel{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    position: relative;
+    top: -121px;
+  }
+
+  .About {
+    height: 50vh;
+  }
+
+  .Tour{
+    height: 50vh;
+    background-size: cover;
+  }
+
+  .chevron{
+    display: flex;
+    position: relative;
+    bottom: -270px;
+  }
+
+  .chevron:hover{
+    opacity: .5;
+  }
+
+  .testimonial_box{
+    width: 83%;
+  }
 }
 
 /* On screens that are 900px wide or less */
 @media screen and (max-width: 979px) {
-  .Testimonials{
-    height: 340vh;
+  .testimonial_1{
+    background-color: #fff;
+    width: 40%;
+    padding: 40px;
+    font-size: 12px;
+  }
+
+  .testmionial_1_image{
+    max-width: 260px;
+    max-height: 260px;
+    overflow: hidden;
+  }
+}
+
+/* On screens that are 1000px wide or less */
+@media screen and (max-width: 874px) {
+  .testimonial_box{
+    width: 86%;
   }
 }
 
 /* On screens that are 768px wide or less */
 @media screen and (max-width: 768px) {
+  .NavBar{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
 
+  .NavBar a{
+    font-size: 20px;
+  }
+
+  .container{
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    display: none;
+  }
+  .bar1{
+    background-color: #fff;
+  }
+  .bar2{
+    background-color: #fff;
+  }
+  .bar3{
+    background-color: #fff;
+  }
+
+  .BillyJoel{
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: -37px;
+    text-transform: uppercase;
+  }
+
+  #about_section{
+    font-size: 12px;
+  }
+
+  .testimonial_box{
+    width: 96%;
+  }
+
+  .testmionial_1_image{
+    max-width: 245px;
+    max-height: 245px;
+    overflow: hidden;
+  }
+
+  .testimonial_1{
+    background-color: #fff;
+    width: 45%;
+    padding: 35px;
+    font-size: 11px;
+  }
 }
 
 /* On screens that are 550px wide or less */
 @media screen and (max-width: 550px) {
-
+  .NavBar{
+    display: none;
+  }
+  .container{
+    display: block;
+  }
+  .BillyJoel{
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    text-transform: uppercase;
+  }
 }
 
 /* On screens that are 450px wide or less */
