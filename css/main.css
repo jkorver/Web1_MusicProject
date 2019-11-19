@@ -136,6 +136,10 @@
     text-decoration: none;
   }
 
+  .container{
+    display: none;
+  }
+
 /* Enlarged the text a bit and transformed it to uppercase with white lettering. it's easier to read and definitely stands out for brand presence. */
   .BillyJoel{
     color: #fff;
@@ -162,6 +166,10 @@
     background-attachment: fixed;
     background-color: #030304;
     position: relative;
+  }
+
+  .About_mobile{
+    display: none;
   }
 
 /* fixed positioning: made .About position relative so you can push this class down 10px and left 30px. Much easier to maintain for mobile. */
@@ -233,6 +241,10 @@
     font-family: 'NotoSans', sans-serif;
     font-size: 50px;
     margin: 2%;
+  }
+
+  .tour_section_mobile{
+    display: none;
   }
 
 /* Added basic styles to a button element to get rid of the background color */
@@ -525,44 +537,35 @@
   .Hero{
     height: 50vh;
   }
-
   .NavBar{
     position: absolute;
     right: 40px;
     top: 40px;
   }
-
   .NavBar a{
     font-size: 25px;
   }
-
   .BillyJoel{
-    color: #fff;
-    font-family: 'Anton', sans-serif;
-    font-size: 70px;
-    position: relative;
-    top: -121px;
+    font-size: 40px;
+    position: absolute;
+    top: -15px;
+    left: 45px;
   }
-
   .About {
     height: 50vh;
   }
-
   .Tour{
     height: 50vh;
     background-size: cover;
   }
-
   .chevron{
     display: flex;
     position: relative;
     bottom: -270px;
   }
-
   .chevron:hover{
     opacity: .5;
   }
-
   .testimonial_box{
     width: 83%;
   }
@@ -576,7 +579,6 @@
     padding: 40px;
     font-size: 12px;
   }
-
   .testmionial_1_image{
     max-width: 260px;
     max-height: 260px;
@@ -635,7 +637,7 @@
   }
 
   .testimonial_box{
-    width: 96%;
+    width: 90%;
   }
 
   .testmionial_1_image{
@@ -667,6 +669,51 @@
     top: -20px;
     text-transform: uppercase;
   }
+  .About{
+    height: 30vh;
+    background-attachment: scroll;
+  }
+  .about_section_title h1{
+    font-size: 40px;
+  }
+  .sectionbox_about{
+    display: none;
+  }
+  .About_mobile{
+    display: flex;
+    height: 40vh;
+    background-color: #000;
+  }
+  .about_section_mobile{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 10px;
+    position: relative;
+    left: 6%;
+  }
+  .Tour{
+    height: 30vh;
+    background-attachment: scroll;
+  }
+  .tour_section_title h1{
+    font-size: 40px;
+  }
+  .tour_section_mobile{
+    display: flex;
+    width: 33.3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 10px;
+    position: absolute;
+    right: 30px;
+  }
+
 }
 
 /* On screens that are 450px wide or less */
