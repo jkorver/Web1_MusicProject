@@ -702,16 +702,60 @@
   .tour_section_title h1{
     font-size: 40px;
   }
+  button{
+   display: none;
+  }
+  .chevron{
+    display: none;
+  }
   .tour_section_mobile{
     display: flex;
-    width: 33.3%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  .tour_mobile_layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .tour_mobile_sectionbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: center;
+  }
+  .tour_list1{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    margin: 10px;
-    position: absolute;
-    right: 30px;
+    width: 50%;
+    color:#000;
+  }
+  .tour_day{
+    font-size: 55px;
+    text-decoration: none;
+  }
+  .tour_month_year{
+    font-size: 14px;
+    line-height: 0%;
+    text-decoration: none;
+  }
+  .tour_list_2{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .tour_venue{
+    font-size: 20px;
+    line-height: 55%;
   }
 
 }
