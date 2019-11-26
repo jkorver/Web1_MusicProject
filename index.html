@@ -88,13 +88,16 @@
 		</div>
 		<div class="chevron">
 			<button class="showTour">
-			<img src="img/Vector1.svg">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/Vector1.svg"></span>
+
 		 </button>
 		</div>
-	</section>
-	<section class="tour_section_mobile">
-		<div class="tour_mobile_layout">
-			<div class="tour_mobile_sectionbox">
+		<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+		<div class="tours">
+			<div>
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">20</p>
@@ -109,7 +112,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">25</p>
@@ -124,7 +127,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">2</p>
@@ -139,7 +142,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">11</p>
@@ -154,7 +157,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">20</p>
@@ -169,7 +172,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">17</p>
@@ -183,8 +186,9 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="tour_mobile_sectionbox">
+</div>
+<div>
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">24</p>
@@ -199,7 +203,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">14</p>
@@ -214,7 +218,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">9</p>
@@ -229,7 +233,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">21</p>
@@ -244,7 +248,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">12</p>
@@ -259,7 +263,7 @@
 				</div>
 			</div>
 
-			<div class="tour_mobile_sectionbox">
+			<div class="tour_sectionbox">
 				<div class="tour_list_1">
 					<div class="tour_dates">
 						<p class="tour_day">26</p>
@@ -273,9 +277,8 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
+	</div>
 	</section>
 
 	<section class="Testimonials">
@@ -398,5 +401,14 @@
 	             }
 	           });
 	</script>
+	<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </body>
 </html>

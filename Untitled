@@ -1,0 +1,190 @@
+
+<section class="tour_section_mobile">
+<div>
+  <div class="tour_mobile_layout">
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">20</p>
+          <p class="tour_month_year">Oct 2019</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Globe Life Park<p>
+          <p>Arington, TX</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">25</p>
+          <p class="tour_month_year">Oct 2019</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">2</p>
+          <p class="tour_month_year">Dec 2019</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">11</p>
+          <p class="tour_month_year">Dec 2019</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">20</p>
+          <p class="tour_month_year">Dec 2019</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">17</p>
+          <p class="tour_month_year">Jan 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Amway Center<p>
+          <p>Orlando, FL</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div>
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">24</p>
+          <p class="tour_month_year">Jan 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">14</p>
+          <p class="tour_month_year">Feb 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">9</p>
+          <p class="tour_month_year">March 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Chase Field<p>
+          <p>Phoenix, AZ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">21</p>
+          <p class="tour_month_year">March 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">12</p>
+          <p class="tour_month_year">April 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tour_mobile_sectionbox">
+      <div class="tour_list_1">
+        <div class="tour_dates">
+          <p class="tour_day">26</p>
+          <p class="tour_month_year">April 2020</p>
+        </div>
+      </div>
+      <div class="tour_list_2">
+        <div class="tour_venue">
+          <p>Madison Square Garden<p>
+          <p>New York, NY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</section>
