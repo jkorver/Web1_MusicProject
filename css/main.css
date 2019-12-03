@@ -243,25 +243,31 @@
     margin: 2%;
   }
   .tour_sectionbox{
-    justify-content: center;
     position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
   }
   .tour_dates{
     color: #fff;
     width: 100%;
-    padding: 6px;
+    padding: 0;
     line-height: 0px;
   }
   .tour_day{
     text-align: center;
     font-size: 58px;
   }
+  .tour_month_year{
+    position: relative;
+    top: -18px;
+  }
   .tour_venue{
     color: #fff;
     width: 100%;
     text-align: left;
-    padding: 6px;
+    padding: 18px;
   }
   .tour_section_mobile{
     display: none;
@@ -334,6 +340,10 @@
     margin: 0 auto;
     flex-direction: row;
     background-color: #fff;
+  }
+
+  .testimonial_box_mobile{
+    display: none;
   }
 
 
@@ -423,6 +433,8 @@
   margin: 0 auto;
   flex-direction: row;
   width: 90%;
+  position: relative;
+  top: -190px;
 }
 
 .overlay a {
@@ -440,7 +452,6 @@
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
   right: 45px;
   font-size: 60px;
 }
@@ -641,14 +652,6 @@
     height: 50vh;
     background-size: cover;
   }
-  .chevron{
-    display: flex;
-    position: relative;
-    bottom: -270px;
-  }
-  .chevron:hover{
-    opacity: .5;
-  }
   .testimonial_box{
     width: 83%;
   }
@@ -673,6 +676,9 @@
 @media screen and (max-width: 874px) {
   .testimonial_box{
     width: 86%;
+  }
+  .tour_sectionbox{
+    padding-left: 40px;
   }
 }
 
@@ -717,6 +723,9 @@
 
   #about_section{
     font-size: 12px;
+  }
+  .tour_sectionbox{
+    padding-left: 35px;
   }
 
   .testimonial_box{
@@ -776,7 +785,7 @@
     text-align: left;
     margin: 10px;
     position: relative;
-    left: 6%;
+    left: 10%;
   }
   .Tour{
     height: 30vh;
@@ -796,23 +805,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #000;
   }
-  .tour_mobile_layout{
+  .tours_mobile{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 0 auto;
-    width: 100%;
-  }
-  .tour_mobile_sectionbox{
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    position: center;
+    width: 90%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .tour_list1{
     display: flex;
@@ -827,7 +831,7 @@
     text-decoration: none;
   }
   .tour_month_year{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 0%;
     text-decoration: none;
   }
@@ -837,24 +841,90 @@
     width: 60%;
   }
   .tour_venue{
-    font-size: 20px;
-    line-height: 40%;
+    font-size: 16px;
+    line-height: 140%;
   }
   .tour_dates{
     line-height: 0px;
   }
-
+  .testimonial_box{
+    display: none;
+  }
+  .testimonial_box_mobile{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    position: relative;
+    top: 10px;
+  }
+  .testmionial_1_image{
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .testimonial_1{
+    background-color: #3D3935;
+    font-size: 11px;
+    width: 80%;
+    color: #fff;
+  }
 }
-
 
 /* On screens that are 450px wide or less */
 @media screen and (max-width: 450px) {
-
+  .about_section_mobile{
+    position: relative;
+    left: 8%;
+  }
+  .testmionial_1_image{
+    max-width: 320px;
+    max-height: 320px;
+    overflow: hidden;
+  }
+  .tour_sectionbox{
+    padding-left: 22px;
+  }
+  .tour_day{
+    font-size: 50px;
+  }
+  .tour_month_year{
+    font-size: 14px;
+  }
+  .tour_venue{
+    font-size: 12px;
+    line-height: 140%;
+  }
 }
 
 /* On screens that are 300px wide or less */
 @media screen and (max-width: 300px) {
+  .BillyJoel{
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    text-transform: uppercase;
+  }
+  .testmionial_1_image{
+    max-width: 260px;
+    max-height: 260px;
+    overflow: hidden;
+  }
+  .tour_sectionbox{
+    padding-left: 18px;
+  }
+  .tour_day{
+    font-size: 30px;
+  }
+  .tour_month_year{
+    font-size: 8px;
+    line-height: 12px;
 
+  }
+  .tour_venue{
+    font-size: 10px;
+  }
 }
 
   @media only screen and (min-width: 35em) {
