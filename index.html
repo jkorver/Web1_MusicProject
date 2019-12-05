@@ -40,14 +40,28 @@
 		<div class="BillyJoel">
 			<h1>Billy Joel</h1>
 		</div>
+
+		<!--
 		<div class="container" onclick="myFunction(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
   		<div class="bar3"></div>
 		</div>
+	-->
+
+		<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#">About</a>
+	<a href="#">Tour</a>
+	<a href="#">Testimonials</a>
+</div>
 		<nav class="NavBar">
 			<a href="#about">About</a> <a href="#tour">Tour</a> <a href="#testimonials">Testimonials</a>
 		</nav>
+
+		<!-- Mobile Nav -->
+
+
 	</section>
 	<section class="About">
 		<div class="about_section_title">
@@ -611,6 +625,7 @@
 	</script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
 	</script>
+	<script src="js/mobilenav.js"></script>
 	<script type="text/javascript">
 	         // Select all links with hashes
 	         $('a[href*="#"]')

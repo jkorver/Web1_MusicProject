@@ -466,6 +466,54 @@
 }
 /* End Overlay */
 
+/* Mobile Nav */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* End Mobile Nav */
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -906,13 +954,36 @@
     top: 0px;
     text-transform: uppercase;
   }
-  .testmionial_1_image{
-    max-width: 260px;
-    max-height: 260px;
-    overflow: hidden;
+  .container{
+    height: 20px;
+    width: 20px;
+  }
+  .about_section_title{
+    position: absolute;
+    top: 20px;
+  }
+  .about_section_title h1{
+    font-size: 30px;
+  }
+  .About{
+    height: 24vh;
+    background-attachment: scroll;
+  }
+  .About_mobile{
+    height: 55vh;
+  }
+  .Tour{
+    height: 24vh;
+  }
+  .tour_section_title{
+    position: absolute;
+    top: 20px;
+  }
+  .tour_section_title h1{
+    font-size: 30px
   }
   .tour_sectionbox{
-    padding-left: 18px;
+    padding-left: 6px;
   }
   .tour_day{
     font-size: 30px;
@@ -920,9 +991,23 @@
   .tour_month_year{
     font-size: 8px;
     line-height: 12px;
-
   }
   .tour_venue{
+    font-size: 9px;
+    padding: 7px;
+  }
+  .testimonial_layout h1{
+    font-size: 30px;
+    position: relative;
+    left: -40px;
+  }
+  .testmionial_1_image{
+    max-width: 260px;
+    max-height: 260px;
+    overflow: hidden;
+  }
+  .footer_nav a{
+    padding: 5px;
     font-size: 10px;
   }
 }
